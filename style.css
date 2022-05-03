@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body {
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+header {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+.conteudo {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(158, 158, 158); 
+}
+select {
+    margin: 10px 10px 10px 0;
+    box-shadow: 0 10px 25px rgb(105, 105, 105);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    appearance: none;
+    width: 36%;
+}
+.selects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    position: relative;
+    width: 50%;
+    height: 10%;
+    border: 0;
+}
+.arrow-select {
+    display: block;
+    position: absolute;
+    top: 1;
+    right: 14%;
+    height: 1rem;
+    width: 1rem;
+    pointer-events: none;
+}
+.arrow-select::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 15%;
+    top: 40%;
+    transform: translate(-30%, -30%);
+    opacity: 0.8;
+}
+.arrow-select::after {
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.5em solid grey;
+    top: 45%;
+}
+.arrow-select-dia {
+    display: block;
+    position: absolute;
+    top: 1;
+    right: 56%;
+    height: 1rem;
+    width: 1rem;
+    pointer-events: none;
+}
+.arrow-select-dia::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 40%;
+    transform: translate(-30%, -30%);
+    opacity: 0.8;
+}
+.arrow-select-dia::after {
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.5em solid grey;
+    top: 45%;
+}
+.idade-btn {
+    width: 30%;
+    position: absolute;
+    left: 48%;
+    top: 27%;
+}
+#anoNasc {
+    width: 25%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 10px 25px rgb(105, 105, 105);
+    margin: 10px;
+}
+
+#calc {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgb(105, 105, 105);
+}
+
+#calc:hover {
+    transform: scale(1.2);
+}
+p {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+}
+#idade {
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+#signo {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    width: 96%;
+}
+#caracteristicas {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    margin: 20px;
+}
